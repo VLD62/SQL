@@ -1,0 +1,6 @@
+select c.table_name, c.CONSTRAINT_NAME,cc.CONSTRAINT_NAME as REMOTE_CONSTRAINT_NAME,
+cc.TABLE_NAME as REMOTE_TABLE_NAME, cc.COLUMN_NAME 
+FROM all_constraints c
+JOIN all_cons_columns cc 
+ON c.R_CONSTRAINT_NAME = cc.CONSTRAINT_NAME
+WHERE c.owner='ELT2_OWNER' order by 1;
