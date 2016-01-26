@@ -1,3 +1,4 @@
+--Get details about long running operations:
 SELECT osuser,
        sl.sql_id,
        sl.sql_hash_value,
