@@ -13,3 +13,5 @@ SELECT s.username,
  INNER JOIN v$sql sq ON sq.sql_id = sl.sql_id
  INNER JOIN v$session s ON sl.SID = s.SID AND sl.serial# = s.serial#
  WHERE time_remaining > 0;
+ 
+ -- If you want to see the SQL query causing the long running operation.
