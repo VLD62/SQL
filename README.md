@@ -1,5 +1,6 @@
 # SQL
-Purpose of this repository is to store useful SQL queries.
+Purpose of this repository is to store useful SQL queries
+and hints.
 ----------------------------------------------------------
 26.01.2016
 ----------------------------------------------------------
