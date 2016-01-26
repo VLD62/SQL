@@ -1,0 +1,1 @@
+In Oracle SQLDeveloper Go to: Tools >> Preferences >> Database > NLS Parameters and update your Date Format field to DD-MON-RR HH:MI:SS value
