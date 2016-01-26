@@ -1,3 +1,4 @@
+--Show long running SQL Statements
 SELECT s.username,
        sl.sid,
        sq.executions,
