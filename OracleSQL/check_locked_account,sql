@@ -1,0 +1,19 @@
+Oracle standard auditing feature should be enabled bysetting initialization parameter AUDIT_TRAIL
+and restart  Oracle database.
+
+Then activate network auditing with (as SYS):
+
+SQL> AUDIT network BY ACCESS;
+ 
+AUDIT succeeded.
+---------------------
+SELECT *
+  FROM dba_audit_session
+ORDER BY sessionid DESC;
+-----
+SELECT username,userhost,returncode
+  FROM dba_audit_session
+WHERE username='USERNAME'
+ORDER BY sessionid DESC;
+     
+     --check returncode coloumn for 1017 ir 28000 
